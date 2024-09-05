@@ -1,21 +1,18 @@
-
 from odoo import models, fields
-
 
 class AccountMove(models.Model):
     _inherit = 'account.move'
 
+    # Define campos Many2one y Many2many correctamente
     mp_flujo_id = fields.Many2one('mp.flujo', string='Flujo')
     mp_grupo_flujo_ids = fields.Many2many('mp.grupo.flujo', string='Grupo de Flujos')
     mp_grupo_flujo_id = fields.Many2one('mp.grupo.flujo', string='Grupo de Flujo')
 
 
-
-
-
 class AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
 
+    # Definiciones de campos related revisadas para asegurar que apunten a campos existentes y correctos
     invoice_date = fields.Date(related='move_id.invoice_date', store=True)
     l10n_latam_document_type_id = fields.Many2one(related='move_id.l10n_latam_document_type_id', store=True)
     journal_id = fields.Many2one(related='move_id.journal_id', store=True)
