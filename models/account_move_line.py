@@ -13,3 +13,4 @@ class AccountMoveLine(models.Model):
     invoice_origin = fields.Char(related='move_id.invoice_origin', store=True)
     vat = fields.Char(related='move_id.partner_id.vat', store=True)
     code_account = fields.Char(related='account_id.code', string='Número de Cuenta Contable', store=True)
+    
