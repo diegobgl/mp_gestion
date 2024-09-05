@@ -1,0 +1,23 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="mp_gestion_menu_root" name="MP Gestion"/>
+    <record id="view_mp_gestion_account_move_tree" model="ir.ui.view">
+        <field name="name">account.move.line.tree</field>
+        <field name="model">account.move.line</field>
+        <field name="arch" type="xml">
+            <tree string="Gestión">
+                <field name="id" optional="hide"/>
+                <field name="date" string="Fecha contable"/>
+                <field name="vat" string="RUT"/>
+                <field name="partner_id" string="Proveedor" optional="show"/>
+                <field name="invoice_date" string="Fecha asiento" optional="hide"/>
+                <field name="move_name" optional="hide"/>
+                <field name="code_account" optional="show"/>
+                <field name="account_id" optional="show"/>
+                <field name="user_type_id" optional="show" string="Tipo de Cuenta"/>
+                <field name="move_id" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
