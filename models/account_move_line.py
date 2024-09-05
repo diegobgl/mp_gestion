@@ -7,6 +7,8 @@ class AccountMove(models.Model):
 
     mp_flujo_id = fields.Many2one('mp.flujo', string='Flujo')
     mp_grupo_flujo_ids = fields.Many2many('mp.grupo.flujo', string='Grupo de Flujos')
+    mp_grupo_flujo_id = fields.Many2one('mp.grupo.flujo', string='Grupo de Flujo')
+
 
 
 
