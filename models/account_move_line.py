@@ -6,8 +6,10 @@ class AccountMove(models.Model):
     _inherit = 'account.move'
 
     mp_flujo_id = fields.Many2one('mp.flujo', string='Flujo')
+    mp_grupo_flujo_ids = fields.Many2many('mp.grupo.flujo', string='Grupo de Flujos')
 
-    
+
+
 
 class AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
