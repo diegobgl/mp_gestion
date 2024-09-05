@@ -1,6 +1,14 @@
 
 from odoo import models, fields
 
+
+class AccountMove(models.Model):
+    _inherit = 'account.move'
+
+    mp_flujo_id = fields.Many2one('mp.flujo', string='Flujo')
+
+    
+
 class AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
 
@@ -13,4 +21,3 @@ class AccountMoveLine(models.Model):
     invoice_origin = fields.Char(related='move_id.invoice_origin', store=True)
     vat = fields.Char(related='move_id.partner_id.vat', store=True)
     code_account = fields.Char(related='account_id.code', string='Número de Cuenta Contable', store=True)
-    

@@ -6,7 +6,7 @@
     'website': 'https://www.holdconet.com',
     'category': 'account',
     'version': '17.0.0.0.1',
-    'depends': ['account', 'l10n_latam_invoice_document'],
+    'depends': ['account', 'l10n_latam_invoice_document', 'payroll_payment'],
     'data': [
         'security/mp_gestion_group.xml',
         'views/account_move_views.xml',
