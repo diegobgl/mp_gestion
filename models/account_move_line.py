@@ -41,7 +41,3 @@ class AccountMoveLine(models.Model):
         string='Número de Cuenta Contable', 
         store=True
     )
-        related='account_id.code', 
-        string='Número de Cuenta Contable', 
-        store=True
-    )
