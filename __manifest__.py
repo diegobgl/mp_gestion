@@ -1,4 +1,3 @@
-
 {
     'name': "MP Gestion",
     'summary': "Se agrega la gestión para la contabilidad",
