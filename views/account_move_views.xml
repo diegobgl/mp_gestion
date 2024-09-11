@@ -3,7 +3,7 @@
     <!-- Menú Principal de MP Gestión, ahora dentro de account.finance -->
     <menuitem id="mp_gestion_menu_root" 
               name="MP Gestion" 
-              parent="account.menu_finance" 
+              parent="menu_reportes_control_gestion_root" 
               sequence="10"/>
 
     <!-- Acción para Mostrar la Vista Tree de Account Move Line -->
