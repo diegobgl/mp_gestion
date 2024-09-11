@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- Menú Principal de MP Gestión, ahora dentro de account.finance -->
-    <menuitem id="mp_gestion_menu_root" 
+    <menuitem id="mp_gestion_menu" 
               name="MP Gestion" 
               parent="menu_reportes_control_gestion_root"
               sequence="5"/>
@@ -23,7 +23,7 @@
     <!-- Enlazar la Acción al Menú de MP Gestión -->
     <menuitem id="menu_mp_gestion_account_move_line_tree" 
               name="Movimientos de Gestión" 
-              parent="mp_gestion_menu_root" 
+              parent="mp_gestion_menu" 
               action="action_mp_gestion_account_move_line_tree"
               sequence="20"/>
     
