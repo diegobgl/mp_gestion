@@ -14,7 +14,7 @@
                 <field name="move_name" optional="hide"/>
                 <field name="code_account" optional="show"/>
                 <field name="account_id" optional="show"/>
-                <field name="user_type_id" optional="show" string="Tipo de Cuenta"/>
+                <!--field name="user_type_id" optional="show" string="Tipo de Cuenta"/-->
                 <field name="move_id" optional="hide"/>
             </tree>
         </field>
