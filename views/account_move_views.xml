@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- Menú Principal de MP Gestión, ahora dentro de account.finance -->
-    <menuitem id="mp_gestion_menu" 
+    <!--menuitem id="mp_gestion_menu" 
               name="MP Gestion" 
               parent="menu_reportes_control_gestion_root"
-              sequence="5"/>
+              sequence="5"/-->
 
     <!-- Acción para Mostrar la Vista Tree de Account Move Line -->
     <record id="action_mp_gestion_account_move_line_tree" model="ir.actions.act_window">
@@ -25,7 +25,7 @@
               name="Movimientos de Gestión" 
               parent="mp_gestion_menu" 
               action="action_mp_gestion_account_move_line_tree"
-              sequence="20"/>
+              sequence="2"/>
     
     <!-- Vista Tree para Account Move Line Ajustada -->
     <record id="view_mp_gestion_account_move_tree" model="ir.ui.view">
