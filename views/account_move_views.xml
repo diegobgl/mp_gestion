@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Menú Principal de MP Gestión, ahora dentro de account.finance -->
-    <menuitem id="mp_gestion_menu" 
-              name="MP Gestion" 
-              sequence="5"/>
-
-        <!-- Enlazar la Acción al Menú de MP Gestión -->
-    <menuitem id="menu_mp_gestion_account_move_line_tree" 
-              name="Movimientos de Gestión" 
-              parent="mp_gestion_menu" 
-              action="action_mp_gestion_account_move_line_tree"
-              sequence="2"/>
 
     <!-- Acción para Mostrar la Vista Tree de Account Move Line -->
     <record id="action_mp_gestion_account_move_line_tree" model="ir.actions.act_window">
@@ -45,4 +34,16 @@
             </tree>
         </field>
     </record>
+
+        <!-- Menú Principal de MP Gestión, ahora dentro de account.finance -->
+    <menuitem id="mp_gestion_menu" 
+              name="MP Gestion" 
+              sequence="5"/>
+
+        <!-- Enlazar la Acción al Menú de MP Gestión -->
+    <menuitem id="menu_mp_gestion_account_move_line_tree" 
+              name="Movimientos de Gestión" 
+              parent="mp_gestion_menu" 
+              action="action_mp_gestion_account_move_line_tree"
+              sequence="2"/>
 </odoo>
