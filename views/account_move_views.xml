@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Acción para Mostrar la Vista Tree de Account Move Line -->
-    <record id="action_mp_gestion_account_move_line_tree" model="ir.actions.act_window">
-        <field name="name">Gestión de Movimientos</field>
-        <field name="res_model">account.move.line</field>
-        <field name="view_mode">tree,form</field>
-        <field name="view_id" ref="view_mp_gestion_account_move_tree"/>
-        <field name="context">{}</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_create">
-                No hay movimientos contables.
-            </p>
-        </field>
-    </record>
-    
+
     <!-- Vista Tree para Account Move Line Ajustada -->
     <record id="view_mp_gestion_account_move_tree" model="ir.ui.view">
         <field name="name">account.move.line.tree</field>
@@ -35,6 +22,20 @@
         </field>
     </record>
 
+    <!-- Acción para Mostrar la Vista Tree de Account Move Line -->
+    <record id="action_mp_gestion_account_move_line_tree" model="ir.actions.act_window">
+        <field name="name">Gestión de Movimientos</field>
+        <field name="res_model">account.move.line</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_mp_gestion_account_move_tree"/>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_create">
+                No hay movimientos contables.
+            </p>
+        </field>
+    </record>
+    
         <!-- Menú Principal de MP Gestión, ahora dentro de account.finance -->
     <menuitem id="mp_gestion_menu" 
               name="MP Gestion" 
