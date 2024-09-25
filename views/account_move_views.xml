@@ -10,26 +10,26 @@
                 <field name="date" string="Fecha contable"/>
                 <field name="vat" string="RUT"/>
                 <field name="partner_id" string="Proveedor" optional="show"/>
-                <field name="invoice_date" string="Fecha asiento" optional="hide"/>
-                <field name="move_name" optional="hide"/>
-                <field name="code_account" optional="show"/>
-                <field name="account_id" optional="show"/>
+                <field name="invoice_date" string="Fecha de factura" optional="hide"/>
+                <field name="move_name" string="Número de asiento" optional="hide"/>
+                <field name="code_account" string="Número de Cuenta Contable" optional="show"/>
+                <field name="account_id" string="Cuenta" optional="show"/>
+                <field name="account_internal_group" string="Grupo de Cuenta Interno" optional="show"/>
                 <field name="journal_id" string="Diario" optional="show"/>
                 <field name="mp_grupo_flujo_id" string="Grupo de Flujo" optional="show"/>
                 <field name="mp_flujo_id" string="Flujo" optional="show"/>
-                <field name="analytic_account_id" string="Cuenta Analítica" optional="show"/>
-                <field name="analytic_tag_ids" string="Grupo Analítico" optional="show" widget="many2many_tags"/>
-                <field name="product_id" string="Artículo/Producto" optional="show"/>
-                <field name="document_id" string="Documento" optional="show"/>
-                <field name="document_type_id" string="Tipo de Documento" optional="show"/>
-                <field name="currency_id" string="Moneda" optional="show" widget="many2one"/>
+                <field name="analytic_account_ids" string="Cuentas Analíticas" optional="show" widget="many2many_tags"/>
+                <field name="product_id" string="Producto" optional="show"/>
+                <field name="l10n_latam_document_type_id" string="Tipo de Documento" optional="show"/>
+                <field name="currency_id" string="Moneda" optional="show"/>
                 <field name="debit" string="Débito" optional="show"/>
                 <field name="credit" string="Crédito" optional="show"/>
+                <field name="balance" string="Balance" optional="show"/>
+                <field name="amount_currency" string="Importe en divisa" optional="show"/>
                 <field name="move_id" optional="hide"/>
             </tree>
         </field>
     </record>
-
 
     <!-- Acción para Mostrar la Vista Tree de Account Move Line -->
     <record id="action_mp_gestion_account_move_line_tree" model="ir.actions.act_window">
