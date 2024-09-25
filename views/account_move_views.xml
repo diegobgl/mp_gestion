@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-
-    <!-- Vista Tree para Account Move Line Ajustada -->
     <record id="view_mp_gestion_account_move_tree" model="ir.ui.view">
         <field name="name">account.move.line.tree</field>
         <field name="model">account.move.line</field>
@@ -16,11 +14,23 @@
                 <field name="move_name" optional="hide"/>
                 <field name="code_account" optional="show"/>
                 <field name="account_id" optional="show"/>
-                <!-- <field name="user_type_id" optional="show" string="Tipo de Cuenta"/> -->
+                <field name="user_type_id" optional="show" string="Tipo de Cuenta"/>
+                <field name="journal_id" string="Diario" optional="show"/>
+                <field name="mp_grupo_flujo_id" string="Grupo de Flujo" optional="show"/>
+                <field name="mp_flujo_id" string="Flujo" optional="show"/>
+                <field name="analytic_account_id" string="Cuenta Analítica" optional="show"/>
+                <field name="analytic_tag_ids" string="Grupo Analítico" optional="show" widget="many2many_tags"/>
+                <field name="product_id" string="Artículo/Producto" optional="show"/>
+                <field name="document_id" string="Documento" optional="show"/>
+                <field name="document_type_id" string="Tipo de Documento" optional="show"/>
+                <field name="currency_id" string="Moneda" optional="show" widget="many2one"/>
+                <field name="debit" string="Débito" optional="show"/>
+                <field name="credit" string="Crédito" optional="show"/>
                 <field name="move_id" optional="hide"/>
             </tree>
         </field>
     </record>
+
 
     <!-- Acción para Mostrar la Vista Tree de Account Move Line -->
     <record id="action_mp_gestion_account_move_line_tree" model="ir.actions.act_window">
