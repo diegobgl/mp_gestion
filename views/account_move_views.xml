@@ -49,7 +49,7 @@
     <menuitem id="mp_gestion_menu" 
               name="MP Gestion" 
               sequence="5"
-              web_icon="mp_gestion,static/description/MPGESTION_icon.png"
+              web_icon="mp_gestion,static/description/odoo_icon.png"
 />
 
         <!-- Enlazar la Acción al Menú de MP Gestión -->
