@@ -9,7 +9,7 @@
     'data': [
         #'security/mp_gestion_group.xml',
         'security/ir.model.access.csv',
-        'static/icon/MPGESTION_icon.png'
+        'views/account_move_views.xml',
     ],
     'license': 'Other proprietary',
 }
