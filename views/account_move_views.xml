@@ -48,7 +48,9 @@
         <!-- Menú Principal de MP Gestión, ahora dentro de account.finance -->
     <menuitem id="mp_gestion_menu" 
               name="MP Gestion" 
-              sequence="5"/>
+              sequence="5"
+              web_icon="mp_gestion,static/icon/MPGESTION_ico.png"
+/>
 
         <!-- Enlazar la Acción al Menú de MP Gestión -->
     <menuitem id="menu_mp_gestion_account_move_line_tree" 
